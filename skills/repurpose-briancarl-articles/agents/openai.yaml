@@ -1,0 +1,14 @@
+interface:
+  display_name: Brian Carl Article Repurposer
+  short_description: Your words, stronger hooks, X and LinkedIn drafts
+  default_prompt: Use $repurpose-briancarl-articles to turn my latest article into
+    an X thread and LinkedIn post, compare three strong hooks, and preserve my wording.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
