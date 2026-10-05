@@ -6,7 +6,7 @@ Practical AI skills for solo marketers and small marketing teams, built around e
 
 | Skill | What it does |
 | --- | --- |
-| [Brian Carl Article Repurposer](skills/repurpose-briancarl-articles/SKILL.md) | Turns an article into an X thread and LinkedIn post, compares three distinct hooks, recommends one, and preserves the author's wording. |
+| [Article Repurposer](skills/repurpose-articles/SKILL.md) | Turns an article into an X thread and LinkedIn post, compares three distinct hooks, recommends one, and preserves the author's wording. |
 
 ## Article Repurposer
 
@@ -19,19 +19,19 @@ The workflow has four parts:
 
 Each run returns three hook options with a recommendation, finished drafts, and a short note identifying phrases retained from the article. The default goal is article visits and newsletter subscriptions.
 
-The skill is initially configured for Brian Carl and [BrianCarl.com](https://briancarl.com/). To adapt it for another author, update the author-specific instructions and the [voice and project reference](skills/repurpose-briancarl-articles/references/voice-and-project.md) with that author's preferences and real writing samples.
+The skill learns the user's voice from the current article and any supplied writing samples. It ships without a preset author, website, or voice profile. Optional personalization belongs in the user's local copy of the [voice and project reference](skills/repurpose-articles/references/voice-and-project.md), so the public skill stays reusable.
 
 ## Use it
 
-Keep the entire `skills/repurpose-briancarl-articles/` folder together, including its supporting references. Import or install the folder using your agent's supported skill workflow.
+Keep the entire `skills/repurpose-articles/` folder together, including its supporting references. Import or install the folder using your agent's supported skill workflow.
 
 If your agent does not automatically load skills, ask it to read `SKILL.md` and the referenced files before drafting.
 
 Example requests:
 
-> Use repurpose-briancarl-articles to turn this article into an X thread and LinkedIn post. Compare three strong hooks and preserve my wording: [article URL or full text]
+> Use repurpose-articles to turn this article into an X thread and LinkedIn post. Compare three strong hooks and preserve my wording: [article URL or full text]
 
-> Repurpose my latest BrianCarl.com article for X and LinkedIn.
+> Repurpose my latest article from [my website URL] for X and LinkedIn.
 
 > Create only a LinkedIn post from this article.
 

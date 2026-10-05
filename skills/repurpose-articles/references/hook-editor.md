@@ -25,23 +25,23 @@ Use 0–2 internally for each dimension if helpful; ground the comparison in wor
 | Specificity | Fits any AI article | Fits this topic | Distinctive to this argument or evidence |
 | Continuation | Flat statement | General interest | Clear useful payoff or unresolved tension |
 | Source fidelity | Unsupported | Needs qualification | Supported without exaggeration |
-| Author voice | Generic creator template | Plausibly Brian | Preserves his language or directness |
+| Author voice | Generic creator template | Plausibly the user | Preserves their language or directness |
 
 Reject unsupported claims regardless of other strengths. Rewrite candidates weak in relevance, stakes, or specificity. Do not mistake an attention-grabbing but inaccurate opener for a winner. The rubric is a consistency aid, not proof of engagement.
 
-## Established calibration
+## Worked editing example
 
-Rejected as too weak:
+Weaker opening:
 "Your next customer may get a recommendation without ever clicking a search result."
 
 Why: "get a recommendation" is abstract; the opening reports behavior rather than making a marketer feel its consequence.
 
-Approved:
+Stronger supported framing:
 "You can rank #1 on Google and still lose the customer to a competitor ChatGPT recommends."
 
 Why: a familiar success metric meets a concrete acquisition risk. "Can" preserves a possibility rather than claiming a measured loss.
 
-Do not use the approved sentence as a fill-in template for every topic. Transfer the reasoning. For an article about repurposing, find the cost of repeatedly starting from scratch; for a personal experiment, use the actual observation instead of inventing customer loss.
+Treat these as illustrative editorial examples, not the current user's voice or preferred wording. Do not use the stronger sentence as a fill-in template for every topic. Transfer the reasoning. For an article about repurposing, find the cost of repeatedly starting from scratch; for a personal experiment, use the actual observation instead of inventing customer loss.
 
 ## Common failures
 
@@ -50,10 +50,10 @@ Do not use the approved sentence as a fill-in template for every topic. Transfer
 - "AI is changing everything" with no affected decision.
 - "Most marketers get this wrong" without evidence or a clear correction.
 - A numbered promise that forces thin or repetitive items into the body.
-- A "How I" opener claiming Brian achieved something the source only recommends.
+- A "How I" opener claiming the user achieved something the source only recommends.
 - Unsupported precision, fabricated experiments, or guarantees of ranking and recommendations.
 - A dramatic opening softened into abstraction by later edits.
-- A strong newly written opening followed by a body that discards all of Brian's words.
+- A strong newly written opening followed by a body that discards all of the user's words.
 
 ## Last check
 

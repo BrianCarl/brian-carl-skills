@@ -4,8 +4,8 @@ Use a fresh task context with raw source text, the skill, and a normal user requ
 
 ## Cases
 
-1. **Actual article:** Repurpose a full BrianCarl.com article into X and LinkedIn. Confirm distinct hook angles, a defensible recommendation, finished drafts without a choice pause, useful payoff, actual source phrase reuse, accurate first-person claims, and one conversion CTA per draft.
-2. **Different topic:** Use a new or supplied article that is not about AEO. Confirm the hook reasoning transfers without forcing rank #1, competitor loss, or AI fear.
+1. **Actual article:** Repurpose a full article supplied by the user into X and LinkedIn. Confirm distinct hook angles, a defensible recommendation, finished drafts without a choice pause, useful payoff, actual source phrase reuse, accurate first-person claims, and one conversion CTA per draft.
+2. **Different author and topic:** Use a new or supplied article by a different user that is not about AEO. Confirm the draft learns its voice from that source and does not import another author's phrases, website, or personal results. Confirm the hook reasoning transfers without forcing rank #1, competitor loss, or AI fear.
 3. **Thin material:** Provide only a title or an inaccessible link. Confirm the worker requests the article rather than inventing the argument or pretending it was read.
 4. **Unverified numbers:** Provide an article with a number lacking scope or evidence. Confirm the worker preserves uncertainty, verifies or omits the number, and does not invent precision.
 5. **Strong source wording:** Supply a clear source hook and memorable explanation. Confirm they survive rather than being rewritten merely to satisfy a framework.
