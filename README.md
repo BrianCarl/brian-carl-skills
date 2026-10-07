@@ -20,7 +20,7 @@ The workflow has four parts:
 
 Each run returns three hook options with a recommendation, finished drafts, and a short note identifying phrases retained from the article. The default goal is article visits and newsletter subscriptions.
 
-The skill learns the user's voice from the current article and any supplied writing samples. It ships without a preset author, website, or voice profile. Optional personalization belongs in the user's local copy of the [voice and project reference](skills/repurpose-articles/references/voice-and-project.md), so the public skill stays reusable.
+The skill learns the user's voice from the current article and any supplied writing samples. It ships without a preset author, website, or voice profile. Use the [voice and project reference](skills/repurpose-articles/references/voice-and-project.md) as a guide to supplying personal preferences. Keep those preferences in separate user context so skill updates can preserve the public workflow without overwriting personal notes.
 
 ## Hook Reviewer
 
@@ -35,6 +35,54 @@ Each review returns:
 5. A recommendation, including keeping the original when it remains strongest.
 
 The skill includes emotional language and formula banks. It can review a supplied hook or check one it drafts from supplied content. It also works alongside Article Repurposer while preserving that skill's source and voice constraints. Requests for a shorter review or a different format take precedence over the default response.
+
+## Install
+
+Use the [Skills CLI](https://github.com/vercel-labs/skills) with Node.js and npm installed. These commands install skills into supported agents such as Claude Code, Codex, and Cursor.
+
+Choose skills and agents interactively:
+
+```bash
+npx skills add BrianCarl/brian-carl-skills
+```
+
+Install both skills globally, so they are available across projects:
+
+```bash
+npx skills add BrianCarl/brian-carl-skills --skill repurpose-articles review-hooks -g
+```
+
+Install only Hook Reviewer:
+
+```bash
+npx skills add BrianCarl/brian-carl-skills --skill review-hooks -g
+```
+
+To target a specific agent, append `--agent claude-code` or `--agent codex`. Omit `-g` to install into the current project instead.
+
+Preview the available skills without installing:
+
+```bash
+npx skills add BrianCarl/brian-carl-skills --list
+```
+
+## Update
+
+Updates are published to this repository. Skills installed through the Skills CLI can be refreshed manually; publishing a change does not automatically update someone's installed copy.
+
+Update both global skills:
+
+```bash
+npx skills update repurpose-articles review-hooks -g
+```
+
+Update only Hook Reviewer:
+
+```bash
+npx skills update review-hooks -g
+```
+
+Use `-p` instead of `-g` for project installations. Review the [changelog](CHANGELOG.md) for published changes. Keep personal preferences and writing samples outside the installed skill folder, and supply them in your agent's context; an update may replace edited skill files.
 
 ## Use it
 
