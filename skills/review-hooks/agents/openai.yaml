@@ -1,0 +1,14 @@
+interface:
+  display_name: Hook Reviewer
+  short_description: Critique hooks and suggest stronger alternatives
+  default_prompt: Use $review-hooks to review this hook, explain what works and what
+    needs improvement, and suggest three alternatives with a recommendation.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

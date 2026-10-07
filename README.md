@@ -7,6 +7,7 @@ Practical AI skills for solo marketers and small marketing teams, built around e
 | Skill | What it does |
 | --- | --- |
 | [Article Repurposer](skills/repurpose-articles/SKILL.md) | Turns an article into an X thread and LinkedIn post, compares three distinct hooks, recommends one, and preserves the author's wording. |
+| [Hook Reviewer](skills/review-hooks/SKILL.md) | Reviews written, visual, and audible hooks, explains what works and what needs fixing, offers three distinct alternatives, and recommends an option to test. |
 
 ## Article Repurposer
 
@@ -21,11 +22,25 @@ Each run returns three hook options with a recommendation, finished drafts, and 
 
 The skill learns the user's voice from the current article and any supplied writing samples. It ships without a preset author, website, or voice profile. Optional personalization belongs in the user's local copy of the [voice and project reference](skills/repurpose-articles/references/voice-and-project.md), so the public skill stays reusable.
 
+## Hook Reviewer
+
+Start with why the hook matters to the particular viewer. Use specificity to make that relevance recognizable and emotion to make its significance felt. Apply credibility checks in proportion to the claim: context, examples, demonstrations, and sound reasoning can establish trust without an authority statement in every opening.
+
+Each review returns:
+
+1. The original hook or a baseline draft.
+2. A **Keep**, **Sharpen**, or **Rebuild** verdict with specific feedback.
+3. A compact checklist covering relevance, specificity, emotion, clarity, credibility, delivery, and the promised payoff.
+4. Three distinct alternatives: a faithful refinement, a different emotional angle, and a different interest mechanism.
+5. A recommendation, including keeping the original when it remains strongest.
+
+The skill includes emotional language and formula banks. It can review a supplied hook or check one it drafts from supplied content. It also works alongside Article Repurposer while preserving that skill's source and voice constraints. Requests for a shorter review or a different format take precedence over the default response.
+
 ## Use it
 
-Keep the entire `skills/repurpose-articles/` folder together, including its supporting references. Import or install the folder using your agent's supported skill workflow.
+Keep the entire folder for the skill you want to use: `skills/repurpose-articles/` or `skills/review-hooks/`, including its supporting files. Import or install the folder using your agent's supported skill workflow.
 
-If your agent does not automatically load skills, ask it to read `SKILL.md` and the referenced files before drafting.
+If your agent does not automatically load skills, ask it to read `SKILL.md` and any referenced files before drafting.
 
 Example requests:
 
@@ -35,9 +50,15 @@ Example requests:
 
 > Create only a LinkedIn post from this article.
 
+> Use review-hooks to check this hook. Explain what works, suggest three alternatives, and recommend one: [hook]. Audience: [audience]. The content delivers: [payoff].
+
+> Use review-hooks to write and review a hook for this content: [content].
+
 Provide the full article text when the agent cannot access the URL. No publishing service or API key is required for drafting.
 
 ## What is included
+
+Article Repurposer includes:
 
 - `SKILL.md`: the coordinated workflow.
 - `references/hook-editor.md`: hook comparison and editorial calibration.
@@ -46,9 +67,11 @@ Provide the full article text when the agent cannot access the URL. No publishin
 - `references/validation-cases.md`: cases for testing the skill's behavior.
 - `agents/openai.yaml` and `assets/icon.svg`: display metadata for compatible agents.
 
+Hook Reviewer includes its self-contained `SKILL.md`, `agents/openai.yaml`, and `assets/icon.svg`.
+
 ## Scope
 
-This skill prepares drafts. Posting and scheduling require a separate, explicitly authorized workflow. Hook selection is editorial judgment, not a guarantee of engagement or subscriber growth.
+These skills prepare drafts and reviews. Posting and scheduling require a separate, explicitly authorized workflow. Hook selection is editorial judgment, not a guarantee of engagement or subscriber growth.
 
 ## Feedback
 
