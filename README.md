@@ -1,6 +1,10 @@
-# Brian Carl Skills
+# Brian Carl — Marketing Agent Skills
 
 Practical AI skills for solo marketers and small marketing teams, built around editorial judgment, source fidelity, and useful outcomes.
+
+Maintained by **[Brian Carl](https://briancarl.com)**, a marketing executive with two decades of experience in growth and subscription marketing and hundreds of millions in marketing spend managed over his career.
+
+At [BrianCarl.com](https://briancarl.com), I share practical ways solo marketers and small teams can use AI to research, create, and distribute better content. [Read more about my background](https://briancarl.com/about/).
 
 ## Available skills
 
@@ -141,6 +145,13 @@ Opinion to Education includes `SKILL.md`, calibration examples in `references/ex
 ## Scope
 
 These skills prepare drafts and reviews. Posting and scheduling require a separate, explicitly authorized workflow. Hook selection is editorial judgment, not a guarantee of engagement or subscriber growth.
+
+## Connect
+
+- **Website, newsletter, and articles:** [BrianCarl.com](https://briancarl.com)
+- **LinkedIn:** [Brian Carl](https://www.linkedin.com/in/briancarl/)
+- **TikTok:** [@brian.carl.marketing](https://www.tiktok.com/@brian.carl.marketing)
+- **X:** [@BrianCarl](https://x.com/BrianCarl)
 
 ## Feedback
 
