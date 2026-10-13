@@ -7,6 +7,7 @@ Practical AI skills for solo marketers and small marketing teams, built around e
 | Skill | What it does |
 | --- | --- |
 | [Article Repurposer](skills/repurpose-articles/SKILL.md) | Turns an article into an X thread and LinkedIn post, compares three distinct hooks, recommends one, and preserves the author's wording. |
+| [Opinion to Education](skills/teach-from-opinion/SKILL.md) | Discovers a clear teaching takeaway, asks targeted questions about missing substance, and develops practical lessons with worked examples while preserving the author's perspective. |
 | [Hook Reviewer](skills/review-hooks/SKILL.md) | Reviews written, visual, and audible hooks, explains what works and what needs fixing, offers three distinct alternatives, and recommends an option to test. |
 
 ## Article Repurposer
@@ -21,6 +22,14 @@ The workflow has four parts:
 Each run returns three hook options with a recommendation, finished drafts, and a short note identifying phrases retained from the article. The default goal is article visits and newsletter subscriptions.
 
 The skill learns the user's voice from the current article and any supplied writing samples. It ships without a preset author, website, or voice profile. Use the [voice and project reference](skills/repurpose-articles/references/voice-and-project.md) as a guide to supplying personal preferences. Keep those preferences in separate user context so skill updates can preserve the public workflow without overwriting personal notes.
+
+## Opinion to Education
+
+Start with what the audience should be able to do, decide, or explain differently after reading or watching. The skill distinguishes a missing takeaway from a useful takeaway that needs clearer application.
+
+The hybrid workflow proposes the likely lesson, then asks targeted questions where the user's method or intent is missing. It preserves existing teaching in longer articles and recommends focused additions. Before-and-after demonstrations show what changed, why it matters, and how readers can apply the lesson; illustrative examples are distinguished from measured results.
+
+Use this skill before Hook Reviewer when the teaching payoff is unclear. When adapting an existing article, Article Repurposer continues to govern source fidelity.
 
 ## Hook Reviewer
 
@@ -46,10 +55,16 @@ Choose skills and agents interactively:
 npx skills add BrianCarl/brian-carl-skills
 ```
 
-Install both skills globally, so they are available across projects:
+Install all three skills globally, so they are available across projects:
 
 ```bash
-npx skills add BrianCarl/brian-carl-skills --skill repurpose-articles review-hooks -g
+npx skills add BrianCarl/brian-carl-skills --skill repurpose-articles review-hooks teach-from-opinion -g
+```
+
+Install only Opinion to Education:
+
+```bash
+npx skills add BrianCarl/brian-carl-skills --skill teach-from-opinion -g
 ```
 
 Install only Hook Reviewer:
@@ -70,10 +85,10 @@ npx skills add BrianCarl/brian-carl-skills --list
 
 Updates are published to this repository. Skills installed through the Skills CLI can be refreshed manually; publishing a change does not automatically update someone's installed copy.
 
-Update both global skills:
+Update all three global skills:
 
 ```bash
-npx skills update repurpose-articles review-hooks -g
+npx skills update repurpose-articles review-hooks teach-from-opinion -g
 ```
 
 Update only Hook Reviewer:
@@ -86,11 +101,15 @@ Use `-p` instead of `-g` for project installations. Review the [changelog](CHANG
 
 ## Use it
 
-Keep the entire folder for the skill you want to use: `skills/repurpose-articles/` or `skills/review-hooks/`, including its supporting files. Import or install the folder using your agent's supported skill workflow.
+Keep the entire folder for the skill you want to use: `skills/repurpose-articles/`, `skills/review-hooks/`, or `skills/teach-from-opinion/`, including its supporting files. Import or install the folder using your agent's supported skill workflow.
 
 If your agent does not automatically load skills, ask it to read `SKILL.md` and any referenced files before drafting.
 
 Example requests:
+
+> Use teach-from-opinion to help me find the practical lesson in this idea. Propose a takeaway and ask me about any missing substance: [idea].
+
+> Use teach-from-opinion to review this article's educational value. Identify what already teaches well and propose the smallest useful improvement: [article URL or full text].
 
 > Use repurpose-articles to turn this article into an X thread and LinkedIn post. Compare three strong hooks and preserve my wording: [article URL or full text]
 
@@ -116,6 +135,8 @@ Article Repurposer includes:
 - `agents/openai.yaml` and `assets/icon.svg`: display metadata for compatible agents.
 
 Hook Reviewer includes its self-contained `SKILL.md`, `agents/openai.yaml`, and `assets/icon.svg`.
+
+Opinion to Education includes `SKILL.md`, calibration examples in `references/examples.md`, `agents/openai.yaml`, and `assets/icon.svg`.
 
 ## Scope
 

@@ -2,6 +2,14 @@
 
 Notable changes to the published skills and installation guidance are recorded here. Skills CLI users receive changes when they run an update command.
 
+## 2026-10-13
+
+### Added
+
+- Opinion to Education (`teach-from-opinion`): a hybrid workflow for discovering the teaching takeaway in an opinion, drawing out missing instruction, and preserving the author's perspective.
+- Long-form review guidance, worked examples and before-and-after demonstrations, concrete next steps, and calibration examples.
+- README installation commands and usage examples for the new skill.
+
 ## 2026-10-07
 
 ### Added

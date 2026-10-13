@@ -1,0 +1,14 @@
+interface:
+  display_name: Opinion to Education
+  short_description: Turn your point of view into a usable lesson
+  default_prompt: Use $teach-from-opinion to find the practical lesson in this idea,
+    ask targeted questions about missing specifics, and help me teach it.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
